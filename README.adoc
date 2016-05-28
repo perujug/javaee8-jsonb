@@ -1,0 +1,19 @@
+= [Adopt-a-JSR] JSON-B
+
+1. Download source code from https://github.com/eclipse/eclipselink.runtime.git
+
+2. Enter the folder `jsonb`
+
+[source,bash]
+---
+cd jsonb
+---
+
+3. Install project in maven local.
+
+NOTE: there are some test failing. For that reason, test task is excluded.
+
+[source,bash]
+---
+./gradlew install -x test
+---
