@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.eddumelendez.jsonb</groupId>
-    <artifactId>javaee-jsonb</artifactId>
+    <artifactId>javaee8-jsonb</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -16,7 +16,7 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.persistence.json.bind</groupId>
+            <groupId>org.eclipse.persistence</groupId>
             <artifactId>jsonb-ri</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
@@ -44,8 +44,8 @@
 
     <repositories>
         <repository>
-            <id>maven.java.net</id>
-            <url>https://maven.java.net/content/repositories/snapshots/</url>
+            <id>sonatype.snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </repository>
     </repositories>
 
