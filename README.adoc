@@ -1,5 +1,7 @@
 = [Adopt-a-JSR] JSON-B
 
+Follow the next steps if you download the source code for `jsonb`:
+
 1. Download source code from https://github.com/eclipse/eclipselink.runtime.git
 
 2. Enter the folder `jsonb`
@@ -17,3 +19,6 @@ NOTE: there are some test failing. For that reason, test task is excluded.
 ---
 ./gradlew install -x test
 ---
+
+NOTE: Take into account the `groupId` in `build.gradle` is `org.eclipse.persistence.json.bind`. However, in this maven project the groupId is `org.eclipse.persistence`.
+For more information follow this link:https://java.net/projects/jsonb-spec/lists/users/archive/2016-06/message/6[thread].
