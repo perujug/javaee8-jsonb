@@ -7,18 +7,15 @@ Follow the next steps if you download the source code for `jsonb`:
 2. Enter the folder `jsonb`
 
 [source,bash]
----
+----
 cd jsonb
----
+----
 
 3. Install project in maven local.
 
 NOTE: there are some test failing. For that reason, test task is excluded.
 
 [source,bash]
----
+----
 ./gradlew install -x test
----
-
-NOTE: Take into account the `groupId` in `build.gradle` is `org.eclipse.persistence.json.bind`. However, in this maven project the groupId is `org.eclipse.persistence`.
-For more information follow this link:https://java.net/projects/jsonb-spec/lists/users/archive/2016-06/message/6[thread].
+----
