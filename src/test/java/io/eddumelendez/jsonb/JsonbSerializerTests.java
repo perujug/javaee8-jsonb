@@ -21,8 +21,7 @@ public class JsonbSerializerTests {
 	@Test
 	public void serializePerson() {
 		Person person = new Person("Eddú", "Meléndez");
-		//person.setFullname("Eddú Meléndez");
-		//person.setAlias("emelendez");
+		person.setFullname("Eddú Meléndez");
 
 		String json = this.jsonb.toJson(person);
 		assertThat(json, is("{\"name\":\"Eddú\",\"lastName\":\"Meléndez\"}"));

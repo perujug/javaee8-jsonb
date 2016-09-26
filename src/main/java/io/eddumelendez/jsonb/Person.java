@@ -3,6 +3,7 @@ package io.eddumelendez.jsonb;
 import javax.json.bind.annotation.JsonbAnnotation;
 import javax.json.bind.annotation.JsonbProperty;
 import javax.json.bind.annotation.JsonbPropertyOrder;
+import javax.json.bind.annotation.JsonbTransient;
 
 @JsonbAnnotation
 @JsonbPropertyOrder({"name", "lastName"})
@@ -21,8 +22,8 @@ public class Person {
 	@JsonbProperty(value = "lastName")
 	private String lastname;
 
-//	@JsonbTransient
-//	private String fullname;
+	@JsonbTransient
+	private String fullname;
 
 	public String getName() {
 		return this.name;
@@ -40,13 +41,13 @@ public class Person {
 		this.lastname = lastname;
 	}
 
-//	public String getFullname() {
-//		return this.name + " " + this.lastname;
-//	}
-//
-//	public void setFullname(String fullname) {
-//		this.fullname = fullname;
-//	}
+	public String getFullname() {
+		return this.name + " " + this.lastname;
+	}
+
+	public void setFullname(String fullname) {
+		this.fullname = fullname;
+	}
 
 	@Override
 	public boolean equals(Object o) {
