@@ -1,5 +1,7 @@
 = [Adopt-a-JSR] JSON-B
 
+image:https://badges.gitter.im/perujug/javaee8-jsonb.svg[link="https://gitter.im/perujug/javaee8-jsonb?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"]
+
 Follow the next steps if you download the source code for `jsonb`:
 
 1. Download source code from https://github.com/eclipse/eclipselink.runtime.git
