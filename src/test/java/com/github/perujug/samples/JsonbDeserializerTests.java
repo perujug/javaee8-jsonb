@@ -1,4 +1,4 @@
-package io.eddumelendez.jsonb;
+package com.github.perujug.samples;
 
 import javax.json.bind.Jsonb;
 import javax.json.bind.JsonbBuilder;

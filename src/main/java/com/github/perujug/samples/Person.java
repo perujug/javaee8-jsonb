@@ -1,19 +1,20 @@
-package io.eddumelendez.jsonb;
+package com.github.perujug.samples;
 
 import javax.json.bind.annotation.JsonbAnnotation;
 import javax.json.bind.annotation.JsonbProperty;
 import javax.json.bind.annotation.JsonbPropertyOrder;
+import javax.json.bind.annotation.JsonbTransient;
 
 @JsonbAnnotation
-@JsonbPropertyOrder({"name", "lastName", "alias"})
-public class PersonNillable {
+@JsonbPropertyOrder({"name", "lastName"})
+public class Person {
 
-	public PersonNillable(String name, String lastname) {
+	public Person(String name, String lastname) {
 		this.name = name;
 		this.lastname = lastname;
 	}
 
-	public PersonNillable() {
+	public Person() {
 	}
 
 	private String name;
@@ -21,8 +22,8 @@ public class PersonNillable {
 	@JsonbProperty(value = "lastName")
 	private String lastname;
 
-	@JsonbProperty(nillable = true)
-	private String alias;
+	@JsonbTransient
+	private String fullname;
 
 	public String getName() {
 		return this.name;
@@ -40,12 +41,12 @@ public class PersonNillable {
 		this.lastname = lastname;
 	}
 
-	public String getAlias() {
-		return this.alias;
+	public String getFullname() {
+		return this.name + " " + this.lastname;
 	}
 
-	public void setAlias(String alias) {
-		this.alias = alias;
+	public void setFullname(String fullname) {
+		this.fullname = fullname;
 	}
 
 	@Override
@@ -53,7 +54,7 @@ public class PersonNillable {
 		if (this == o) return true;
 		if (o == null || getClass() != o.getClass()) return false;
 
-		PersonNillable person = (PersonNillable) o;
+		Person person = (Person) o;
 
 		if (!name.equals(person.name)) return false;
 		return lastname.equals(person.lastname);
@@ -66,4 +67,5 @@ public class PersonNillable {
 		result = 31 * result + lastname.hashCode();
 		return result;
 	}
+
 }
