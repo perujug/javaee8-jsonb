@@ -9,7 +9,7 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-public class JsonbSerializerTests {
+public class JsonbSerializerTest {
 
 	private Jsonb jsonb;
 
