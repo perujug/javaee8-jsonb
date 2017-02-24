@@ -10,9 +10,14 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.json</artifactId>
+            <version>1.1.0-M1</version>
+        </dependency>
+        <dependency>
             <groupId>org.eclipse</groupId>
             <artifactId>yasson</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.0-M1</version>
         </dependency>
 
         <dependency>
@@ -38,7 +43,11 @@
 
     <repositories>
         <repository>
-            <id>eclipse.yassson.snapshots</id>
+            <id>eclipse.yasson.releases</id>
+            <url>https://repo.eclipse.org/content/repositories/yasson-releases</url>
+        </repository>
+        <repository>
+            <id>eclipse.yasson.snapshots</id>
             <url>https://repo.eclipse.org/content/repositories/yasson-snapshots</url>
         </repository>
     </repositories>
