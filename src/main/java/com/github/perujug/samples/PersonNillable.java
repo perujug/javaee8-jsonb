@@ -5,7 +5,7 @@ import javax.json.bind.annotation.JsonbProperty;
 import javax.json.bind.annotation.JsonbPropertyOrder;
 
 @JsonbAnnotation
-@JsonbPropertyOrder({"name", "lastName", "alias"})
+@JsonbPropertyOrder({"name", "lastname", "alias"})
 public class PersonNillable {
 
 	public PersonNillable(String name, String lastname) {

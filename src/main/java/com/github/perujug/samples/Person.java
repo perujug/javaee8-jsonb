@@ -6,7 +6,7 @@ import javax.json.bind.annotation.JsonbPropertyOrder;
 import javax.json.bind.annotation.JsonbTransient;
 
 @JsonbAnnotation
-@JsonbPropertyOrder({"name", "lastName"})
+@JsonbPropertyOrder({"name", "lastname"})
 public class Person {
 
 	public Person(String name, String lastname) {
