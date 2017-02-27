@@ -2,6 +2,7 @@ package com.github.perujug.samples;
 
 import javax.json.bind.Jsonb;
 import javax.json.bind.JsonbBuilder;
+import javax.json.bind.JsonbConfig;
 
 import org.junit.Before;
 import org.junit.Test;
